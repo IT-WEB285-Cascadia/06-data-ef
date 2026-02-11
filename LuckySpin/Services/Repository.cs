@@ -7,11 +7,10 @@ namespace LuckySpin.Services
         // This repository is connection between the Controller and the database relationships
         // using the LuckySpinContext via DIJ. This will allow you to use 
         // methods to query the database for individual Games, Spins and Players based on the GameId, which is the common link between all three entities.
-        //TODO: Inject the LuckySpinContext into the Repository using DIJ and save it in an instance variable
+        //TODO: Inject the LuckySpinContext into the Repository using DIJ and save it in an instance variable _dbContext
 
 
-        //Methods for the Singleton data store
-
+        //TODO: remove the Singleton properties Player and Game once you have the database set up
         public required Player Player { get; set; }
         public required Game Game { get; set; }
 
